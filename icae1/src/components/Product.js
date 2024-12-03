@@ -1,6 +1,10 @@
+import React, { useState } from 'react';
+
 import '../assets/CSS/layout.css';
 export default function Product(){
-    
+   
+    const [quantity, setQuantity] = useState(0);
+
     return(
         <div className="grid-item">
 
