@@ -5,6 +5,12 @@ export default function Product(){
    
     const [quantity, setQuantity] = useState(0);
 
+    const handleAddToCart = () => {
+        if (quantity > 0) {
+            addToCart(flower, quantity);
+            setQuantity(0); 
+        }
+    };
     return(
         <div className="grid-item">
 
